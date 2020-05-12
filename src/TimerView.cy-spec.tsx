@@ -1,11 +1,4 @@
-# React-TypeScript
-
-Forked from [mobxjs/mobx-react-typescript-boilerplate](https://github.com/mobxjs/mobx-react-typescript-boilerplate)
-
-Minimal boilerplate for a single-page app using MobX, React and TypeScript with TSX and component testing with Cypress and [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test)
-
-```js
-// src/TimerView.cy-spec.tsx
+/// <reference types="cypress" />
 import * as React from 'react'
 import { mount } from 'cypress-react-unit-test'
 import AppState from './AppState'
@@ -27,6 +20,3 @@ describe('TimerView', () => {
     cy.wrap(appState).its('timer').should('equal', 3)
   })
 })
-```
-
-![Timer test](images/timer.gif)
