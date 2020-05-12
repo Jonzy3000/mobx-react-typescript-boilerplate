@@ -1,0 +1,8 @@
+{
+  "experimentalComponentTesting": true,
+  "componentFolder": "src",
+  "testFiles": "**/*cy-spec.*",
+  "env": {
+    "coverage": false
+  }
+}
