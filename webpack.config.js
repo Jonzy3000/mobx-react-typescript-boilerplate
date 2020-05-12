@@ -20,6 +20,9 @@ module.exports = {
     rules: [{
       test: /\.tsx?$/,
       loader: "awesome-typescript-loader",
+      options: {
+        transpileOnly: true
+      },
       include: path.join(__dirname, 'src')
     }]
   }
