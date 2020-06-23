@@ -30,3 +30,10 @@ describe('TimerView', () => {
 ```
 
 ![Timer test](images/timer.gif)
+
+## Run
+
+```shell
+npm install
+npm run cy:open
+```
