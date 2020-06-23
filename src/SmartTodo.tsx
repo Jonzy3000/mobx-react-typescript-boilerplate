@@ -14,6 +14,15 @@ export const SmartTodo = () => {
     },
   }))
 
+  // expose the local "todo" state object
+  // but only when running inside Cypress test
+
+  // @ts-ignore
+  if (window.Cypress) {
+    // @ts-ignore
+    window.todo = todo
+  }
+
   return useObserver(() => (
     <h3 onClick={todo.toggle}>
       {todo.title} {todo.emoji} {todo.done ? 'done' : ''}

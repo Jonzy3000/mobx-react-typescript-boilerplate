@@ -37,7 +37,7 @@ Name | Description
 --- | ---
 [AppState.cy-spec.ts](src/AppState.cy-spec.ts) | Testing a class that uses `@observable` class decoration
 [TimerView.cy-spec.tsx](src/TimerView.cy-spec.tsx) | Passing an observable class as a property to the component
-[SmartTodo.cy-spec.tsx](src/SmartTodo.cy-spec.tsx) | Tests a component that uses `useLocalStore` hook
+[SmartTodo.cy-spec.tsx](src/SmartTodo.cy-spec.tsx) | Tests a component that uses `useLocalStore` hook, exposes local state during test
 
 ## Run
 
