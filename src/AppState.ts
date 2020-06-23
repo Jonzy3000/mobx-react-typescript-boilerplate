@@ -3,8 +3,7 @@ import { observable } from 'mobx';
 export default class AppState {
     @observable timer = 0;
 
-  constructor() {
-      debugger
+    constructor() {
         setInterval(() => {
             this.timer += 1;
         }, 1000);
